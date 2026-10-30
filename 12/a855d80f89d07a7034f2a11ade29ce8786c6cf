@@ -1,0 +1,31 @@
+tueste/config/test/config.d.ts
+  s_9d4aef90ba2d14::t_9cb5e90503971b 1
+tueste/config/test/config.ts
+  s_9d4aef90ba2d14::t_2dd26001a6429f 1-10
+tueste/config/test/setup.ts
+  s_9d4aef90ba2d14::t_74f06d1944a9eb 1
+tueste/package-lock.json
+  s_9d4aef90ba2d14::t_c6072ac3bc04ca 19-22,26,28-29,32-89,282-291,340-510,1365-1494,1885-1955,1966-1985,2012-2025,2077-2086,2116-2136,2144-2157,2176-2192,2213-2219,2241-2260,2271-2290,2341-2370,2397-2447,2745-2754,2765-2781,2818-2844,2917-2941,2963-2969,2984-3007,3042-3054,3102-3128,3149-3168,3186-3231,3267-3276,3716-3831,3839-3893
+tueste/package.json
+  s_9d4aef90ba2d14::t_71db8fba84d81b 9-11,24-27,31,33-34
+tueste/src/pods/edicion/edicion.component.spec.tsx
+  s_9d4aef90ba2d14::t_5a8a5d53bf7970 1-64
+tueste/tsconfig.json
+  s_9d4aef90ba2d14::t_6abbb64d08633d 18-20
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "12a855d80f89d07a7034f2a11ade29ce8786c6cf",
+  "prompts": {},
+  "sessions": {
+    "s_9d4aef90ba2d14": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1e2cf2d5-f658-476c-8c29-0a7f7d3b1a2a",
+        "model": "unknown"
+      },
+      "human_author": "Gabriel Ortega <gabrielon@ext.inditex.com>"
+    }
+  }
+}
