@@ -1,0 +1,21 @@
+src/catalog/use-offer-countdown.spec.ts
+  s_9d4aef90ba2d14::t_53c5963b46821e 1-83
+src/catalog/use-offer-countdown.ts
+  s_9d4aef90ba2d14::t_09341daa4bc724 1-14
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "f782d0c7b139413cb4092da5fc0a4f23dcd3c751",
+  "prompts": {},
+  "sessions": {
+    "s_9d4aef90ba2d14": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1e2cf2d5-f658-476c-8c29-0a7f7d3b1a2a",
+        "model": "unknown"
+      },
+      "human_author": "Gabriel Ortega <gabrielon@ext.inditex.com>"
+    }
+  }
+}
