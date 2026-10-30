@@ -1,0 +1,29 @@
+package-lock.json
+  s_9d4aef90ba2d14::t_e2401de3bfd6a2 27,382-468,497-521,541-550,952-961,976-982,1013-1022,1398-1440,1477-1490,1714-1720,1905-1914,1945-1971,2110-2132,2315-2325,2604-2610,3243-3298,3422-3428,3766-3772,3891-3897,4059-4071,4139-4155,4235-4263,4320-4332,4434-4449,4578-4587,4923-4971,4988-5025
+package.json
+  s_9d4aef90ba2d14::t_9c3859f9124ada 36
+src/catalog/coffee-catalog.msw.spec.tsx
+  s_9d4aef90ba2d14::t_3cee3ccc62b980 1-49
+src/catalog/coffee.api.msw.spec.ts
+  s_9d4aef90ba2d14::t_111882ed2137e0 1-63
+src/mocks/handlers.ts
+  s_9d4aef90ba2d14::t_02905b4d3f0185 1-4
+src/mocks/server.ts
+  s_9d4aef90ba2d14::t_4eededda94bc64 1-4
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "e789df557548250f0579fd5ba4623e30eff1ea87",
+  "prompts": {},
+  "sessions": {
+    "s_9d4aef90ba2d14": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1e2cf2d5-f658-476c-8c29-0a7f7d3b1a2a",
+        "model": "unknown"
+      },
+      "human_author": "Gabriel Ortega <gabrielon@ext.inditex.com>"
+    }
+  }
+}
