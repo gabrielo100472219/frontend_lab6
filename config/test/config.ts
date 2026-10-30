@@ -5,6 +5,7 @@ export default defineConfig({
     globals: true,
     restoreMocks: true,
     environment: 'jsdom',
+    include: ['src/**/*.spec.{ts,tsx}'],
     setupFiles: ['./config/test/setup.ts'],
     coverage: {
       provider: 'v8',
