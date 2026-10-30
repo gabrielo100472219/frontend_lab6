@@ -1,0 +1,21 @@
+config/test/config.ts
+  s_9d4aef90ba2d14::t_62d35681c2fc12 8
+vitest.config.ts
+  s_9d4aef90ba2d14::t_f82fbceb99e990 1-2
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "8ea0bbdb6e29fe03539dfa521dd1990efb176acb",
+  "prompts": {},
+  "sessions": {
+    "s_9d4aef90ba2d14": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1e2cf2d5-f658-476c-8c29-0a7f7d3b1a2a",
+        "model": "unknown"
+      },
+      "human_author": "Gabriel Ortega <gabrielon@ext.inditex.com>"
+    }
+  }
+}
