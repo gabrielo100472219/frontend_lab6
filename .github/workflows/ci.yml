@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  catalog:
+    name: Catálogo (src/)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run type-check
+      - run: npm run test:run
+
+  tueste:
+    name: Tueste (P5)
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: tueste
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: tueste/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run test:run
