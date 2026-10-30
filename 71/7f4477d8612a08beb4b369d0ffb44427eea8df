@@ -1,0 +1,21 @@
+src/index.tsx
+  s_9d4aef90ba2d14::t_3a1497489fec4f 5
+tsconfig.json
+  s_9d4aef90ba2d14::t_2428e99288683e 4-5
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "717f4477d8612a08beb4b369d0ffb44427eea8df",
+  "prompts": {},
+  "sessions": {
+    "s_9d4aef90ba2d14": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1e2cf2d5-f658-476c-8c29-0a7f7d3b1a2a",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Gabriel Ortega <gabrielon@ext.inditex.com>"
+    }
+  }
+}
