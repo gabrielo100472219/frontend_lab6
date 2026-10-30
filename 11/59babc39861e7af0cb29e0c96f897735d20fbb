@@ -1,0 +1,29 @@
+config/test/config.d.ts
+  s_9d4aef90ba2d14::t_bc7eb9ee265ff5 1
+config/test/config.ts
+  s_9d4aef90ba2d14::t_bfb7b776413885 1-10
+config/test/setup.ts
+  s_9d4aef90ba2d14::t_04315ba42ef22e 1
+package-lock.json
+  s_9d4aef90ba2d14::t_25d29824de857a 17-20,25,28-275,312-357,651-748,760-791,848-885,898-907,921-930,970-979,1031-1040,1101-1110,1179-1199,1207-1220,1292-1298,1344-1353,1364-1370,1385-1397,1514-1520,1576-1596,1926-1938,1952-1961,2214-2220,2380-2427,2712-2741,2751-2757,2788-2797,2926-2939,2972-2984,3023-3025,3097-3124,3134-3143,3165-3171,3187-3200,3245-3254,3366-3378,3602-3608,3712-3724,3751-3777,3795-3840,3960-3969,4066-4196,4298-4327
+package.json
+  s_9d4aef90ba2d14::t_c1ebc26ab548e9 10-12,25-28,33,36-37
+tsconfig.json
+  s_9d4aef90ba2d14::t_285d1f6da3089e 18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "1159babc39861e7af0cb29e0c96f897735d20fbb",
+  "prompts": {},
+  "sessions": {
+    "s_9d4aef90ba2d14": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1e2cf2d5-f658-476c-8c29-0a7f7d3b1a2a",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Gabriel Ortega <gabrielon@ext.inditex.com>"
+    }
+  }
+}
