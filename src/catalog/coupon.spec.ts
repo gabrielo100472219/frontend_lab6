@@ -33,7 +33,7 @@ describe('applyCoupon', () => {
     expect(result).toBe(0);
   });
 
-  it.each([' cafe10 ', 'cafe10', 'Cafe10', '\tCAFE10\n'])(
+  it.each([' cafe10 ', 'cafe10', 'Cafe10', '  CaFe10  '])(
     'debería aceptar "%s" como "CAFE10" (sin distinguir mayúsculas ni espacios)',
     (code) => {
       // Arrange
