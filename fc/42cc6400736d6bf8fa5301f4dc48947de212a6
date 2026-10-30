@@ -1,0 +1,41 @@
+.editorconfig
+  s_9d4aef90ba2d14::t_89020c5f004fe9 1-9
+.gitignore
+  s_9d4aef90ba2d14::t_81cd3afbc02529 1-8
+.npmrc
+  s_9d4aef90ba2d14::t_32c7eac253f485 1
+.prettierrc
+  s_9d4aef90ba2d14::t_5c7d69efbd7763 1-5
+index.html
+  s_9d4aef90ba2d14::t_49ae5554e9c58c 1-15
+package-lock.json
+  s_9d4aef90ba2d14::t_d9b39a83680314 1-3247
+package.json
+  s_9d4aef90ba2d14::t_337bdcac5488a9 1-31
+src/app.tsx
+  s_9d4aef90ba2d14::t_cd8eefc8450444 1-5
+src/index.tsx
+  s_9d4aef90ba2d14::t_6f172a6ad920be 1-6
+tsconfig.json
+  s_9d4aef90ba2d14::t_7842ae0bf16c9b 1-19
+vite-env.d.ts
+  s_9d4aef90ba2d14::t_9f9eb660238fa2 1-3
+vite.config.ts
+  s_9d4aef90ba2d14::t_ad3d1f3908fefc 1-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "fc42cc6400736d6bf8fa5301f4dc48947de212a6",
+  "prompts": {},
+  "sessions": {
+    "s_9d4aef90ba2d14": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1e2cf2d5-f658-476c-8c29-0a7f7d3b1a2a",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Gabriel Ortega <gabrielon@ext.inditex.com>"
+    }
+  }
+}
