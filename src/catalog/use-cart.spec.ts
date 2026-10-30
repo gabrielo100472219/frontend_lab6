@@ -64,4 +64,24 @@ describe('useCart', () => {
     // Assert
     expect(result.current.units).toBe(2);
   });
+
+  it('debería quitar sólo el café indicado cuando se llama a remove', () => {
+    // Arrange
+    const { result } = renderHook(() => useCart(coffees));
+    act(() => {
+      result.current.add(ethiopia);
+      result.current.add(brazil);
+      result.current.add(brazil);
+    });
+
+    // Act
+    act(() => {
+      result.current.remove(brazil.id);
+    });
+
+    // Assert
+    expect(result.current.cart).toEqual([{ coffeeId: ethiopia.id, quantity: 1 }]);
+    expect(result.current.units).toBe(1);
+    expect(result.current.total).toBeCloseTo(13.41);
+  });
 });
