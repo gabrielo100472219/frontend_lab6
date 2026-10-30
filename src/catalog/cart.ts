@@ -1,6 +1,6 @@
 import type { CartItem, Coffee } from './model';
 
-export const formatPrice = (price: number): string => `${price.toFixed(2)} €`;
+export const formatPrice = (price: number): string => `${price.toFixed(2).replace(".", ",")} €`;
 
 export const finalPrice = (coffee: Coffee): number =>
   coffee.price * (1 - (coffee.discount ?? 0));
