@@ -1,0 +1,21 @@
+src/catalog/coupon.spec.ts
+  s_9d4aef90ba2d14::t_97a9fef80b315c 1-74
+src/catalog/coupon.ts
+  s_9d4aef90ba2d14::t_9acaacf022cf06 1-3
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "aeee44548e6c103fe8c08248d51753ca383b6e91",
+  "prompts": {},
+  "sessions": {
+    "s_9d4aef90ba2d14": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1e2cf2d5-f658-476c-8c29-0a7f7d3b1a2a",
+        "model": "unknown"
+      },
+      "human_author": "Gabriel Ortega <gabrielon@ext.inditex.com>"
+    }
+  }
+}
