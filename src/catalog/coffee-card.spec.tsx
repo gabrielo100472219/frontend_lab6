@@ -58,4 +58,15 @@ describe('CoffeeCard', () => {
     expect(onAdd).toHaveBeenCalledTimes(1);
     expect(onAdd).toHaveBeenCalledWith(colombia);
   });
+
+  it('debería coincidir con el snapshot de la tarjeta de Etiopía', () => {
+    // Arrange
+    const onAdd = vi.fn();
+
+    // Act
+    const { asFragment } = render(<CoffeeCard coffee={ethiopia} onAdd={onAdd} />);
+
+    // Assert
+    expect(asFragment()).toMatchSnapshot();
+  });
 });

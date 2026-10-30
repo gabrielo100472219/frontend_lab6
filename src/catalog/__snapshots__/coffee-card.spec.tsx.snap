@@ -1,0 +1,23 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CoffeeCard > debería coincidir con el snapshot de la tarjeta de Etiopía 1`] = `
+<DocumentFragment>
+  <li>
+    <h3>
+      Etiopía Yirgacheffe
+    </h3>
+    <p>
+      Etiopía
+    </p>
+    <p>
+      13.41 €
+    </p>
+    <p>
+      -10 %
+    </p>
+    <button>
+      Añadir Etiopía Yirgacheffe al carrito
+    </button>
+  </li>
+</DocumentFragment>
+`;
