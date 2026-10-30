@@ -1,0 +1,25 @@
+config/test/config.ts
+  s_9d4aef90ba2d14::t_3e6cd943ed5905 9-13
+package-lock.json
+  s_9d4aef90ba2d14::t_55a2b75f1f93c0 25,106-115,126-141,152-175,899-950,1083-1101,2864-2875,3929-3938
+package.json
+  s_9d4aef90ba2d14::t_9024bc6805e21f 12-13,34
+src/catalog/use-cart.spec.ts
+  s_9d4aef90ba2d14::t_463ace3685b26c 67-86
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "e6c401857ae7639d2676142844e7b47305272579",
+  "prompts": {},
+  "sessions": {
+    "s_9d4aef90ba2d14": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1e2cf2d5-f658-476c-8c29-0a7f7d3b1a2a",
+        "model": "unknown"
+      },
+      "human_author": "Gabriel Ortega <gabrielon@ext.inditex.com>"
+    }
+  }
+}
