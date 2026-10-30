@@ -1,0 +1,111 @@
+.gitignore
+  s_9d4aef90ba2d14::t_f302dda7e069cc 8
+tueste/.gitignore
+  s_9d4aef90ba2d14::t_de732aca122f30 1-4
+tueste/.npmrc
+  s_9d4aef90ba2d14::t_0dba707b1f39a9 1
+tueste/index.html
+  s_9d4aef90ba2d14::t_56a95091f994e9 1-5
+tueste/package-lock.json
+  s_9d4aef90ba2d14::t_33ce8c97d0afaf 1-2848
+tueste/package.json
+  s_9d4aef90ba2d14::t_cd8a1465440527 1-28
+tueste/public/coffees.json
+  s_9d4aef90ba2d14::t_ec4a24e579d436 1-50
+tueste/src/app.tsx
+  s_9d4aef90ba2d14::t_70cf376ba6a4c4 1-6
+tueste/src/common/components/offer-countdown.tsx
+  s_9d4aef90ba2d14::t_b178135b6c3322 1-35
+tueste/src/common/components/request-status.tsx
+  s_9d4aef90ba2d14::t_010ca3803c57db 1-7
+tueste/src/common/format.ts
+  s_9d4aef90ba2d14::t_5baeaa0fa52378 1-4
+tueste/src/core/cart/cart-context.ts
+  s_9d4aef90ba2d14::t_b8debef77ec8f4 1-16
+tueste/src/core/cart/cart-provider.tsx
+  s_9d4aef90ba2d14::t_4fd5140e05fb63 1-38
+tueste/src/core/coffees/api.ts
+  s_9d4aef90ba2d14::t_a7bee91ff8011a 1-66
+tueste/src/core/coffees/coffee.schema.ts
+  s_9d4aef90ba2d14::t_7d0c5a93c65130 1-20
+tueste/src/core/coffees/hooks.ts
+  s_9d4aef90ba2d14::t_3484ec7bae39b5 1-60
+tueste/src/core/coffees/model.ts
+  s_9d4aef90ba2d14::t_99392430182057 1-18
+tueste/src/core/router/router.ts
+  s_9d4aef90ba2d14::t_519a57ed424350 1-10
+tueste/src/experiments/memo-lab.tsx
+  s_9d4aef90ba2d14::t_64df5a27519de9 1-121
+tueste/src/layouts/app-layout.tsx
+  s_9d4aef90ba2d14::t_d973d07d516a7a 1-42
+tueste/src/main.tsx
+  s_9d4aef90ba2d14::t_fe282ecd86203a 1-5
+tueste/src/pods/catalogo/catalogo.component.tsx
+  s_9d4aef90ba2d14::t_05e41219f8b120 1-103
+tueste/src/pods/catalogo/catalogo.container.tsx
+  s_9d4aef90ba2d14::t_f102cf25d937d0 1-39
+tueste/src/pods/catalogo/catalogo.vm.ts
+  s_9d4aef90ba2d14::t_736a001a580676 1-6
+tueste/src/pods/catalogo/components/coffee-card.module.css
+  s_9d4aef90ba2d14::t_fa953f84a9fc3e 1-36
+tueste/src/pods/catalogo/components/coffee-card.tsx
+  s_9d4aef90ba2d14::t_66629926d0ce8a 1-32
+tueste/src/pods/catalogo/detalle.component.tsx
+  s_9d4aef90ba2d14::t_c464ecf4239068 1-97
+tueste/src/pods/catalogo/detalle.container.tsx
+  s_9d4aef90ba2d14::t_39397033f1a127 1-26
+tueste/src/pods/catalogo/index.ts
+  s_9d4aef90ba2d14::t_40e36aa2e9923b 1-3
+tueste/src/pods/edicion/edicion.component.tsx
+  s_9d4aef90ba2d14::t_9f857c9444a6ab 1-188
+tueste/src/pods/edicion/edicion.container.tsx
+  s_9d4aef90ba2d14::t_d90d597fedfbbc 1-50
+tueste/src/pods/edicion/index.ts
+  s_9d4aef90ba2d14::t_9ee442bc95aed2 1
+tueste/src/routeTree.gen.ts
+  s_9d4aef90ba2d14::t_8f3edaaa786b21 1-168
+tueste/src/routes/__root.tsx
+  s_9d4aef90ba2d14::t_7a12b6b4961364 1-7
+tueste/src/routes/coffees/$coffeeId/edit.tsx
+  s_9d4aef90ba2d14::t_aee0bc43e0e721 1-11
+tueste/src/routes/coffees/$coffeeId/index.tsx
+  s_9d4aef90ba2d14::t_7614830c2cbf4d 1-11
+tueste/src/routes/coffees/index.tsx
+  s_9d4aef90ba2d14::t_a926ea2c5935eb 1-20
+tueste/src/routes/coffees/new.tsx
+  s_9d4aef90ba2d14::t_201146e52ff63f 1-6
+tueste/src/routes/experimentos/memo.tsx
+  s_9d4aef90ba2d14::t_14b77d2bfcba7c 1-6
+tueste/src/routes/index.tsx
+  s_9d4aef90ba2d14::t_e451959cc96b20 1-5
+tueste/src/scenes/catalogo.scene.tsx
+  s_9d4aef90ba2d14::t_5a40da82f200c1 1-34
+tueste/src/scenes/detalle.scene.tsx
+  s_9d4aef90ba2d14::t_6fd254cc408ff1 1-19
+tueste/src/scenes/edicion.scene.tsx
+  s_9d4aef90ba2d14::t_38736badbffbb1 1-33
+tueste/src/styles.css
+  s_9d4aef90ba2d14::t_7d0be2ff9f95d9 1-17
+tueste/src/vite-env.d.ts
+  s_9d4aef90ba2d14::t_a30d9fc86762b7 1
+tueste/tsconfig.json
+  s_9d4aef90ba2d14::t_c41d37bc6aa177 1-20
+tueste/vite.config.ts
+  s_9d4aef90ba2d14::t_20cc8fb29fd4ce 1-12
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "c946c0e7bf8e04231ce00203c85633ba7aef1ad7",
+  "prompts": {},
+  "sessions": {
+    "s_9d4aef90ba2d14": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "1e2cf2d5-f658-476c-8c29-0a7f7d3b1a2a",
+        "model": "unknown"
+      },
+      "human_author": "Gabriel Ortega <gabrielon@ext.inditex.com>"
+    }
+  }
+}
