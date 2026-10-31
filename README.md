@@ -190,7 +190,11 @@ Añadimos `debería coincidir con el snapshot de la tarjeta de Etiopía` (`src/c
 
 ### P6 · Depurar un test
 
-**Captura pendiente.** Pasos para hacerla:
+![Ejecución parada en el breakpoint de addToCart](docs/p6-breakpoint.png)
+
+Parados en la línea 10 de `src/catalog/cart.ts`: en *Call Stack* se ve `addToCart` con *Paused On Breakpoint*, llamada desde el test (`cart.spec.ts` lleva 0/14 tests completados). En *Variables → Local: addToCart* se pueden inspeccionar `cart` y `coffeeId`.
+
+Pasos:
 
 1. Poner un breakpoint en `src/catalog/cart.ts`, dentro de `addToCart`.
 2. En VS Code, abrir una *JavaScript Debug Terminal*: `⇧⌘P` → *Debug: JavaScript Debug Terminal*, o en el panel de terminal, la flecha `⌄` junto al `+` → *JavaScript Debug Terminal*. (No está en el menú *Terminal* de la barra superior).
@@ -252,7 +256,7 @@ Demostración: la PR [#1](https://github.com/gabrielo100472219/frontend_lab6/pul
 - [x] P3 · Temporizadores falsos
 - [x] P4 · Context
 - [x] P5 · Formulario del laboratorio 4 (`tueste/`)
-- [ ] P6 · Depurar un test: explicación hecha, **falta la captura** parados en el breakpoint
+- [x] P6 · Depurar un test (captura parados en el breakpoint de `addToCart`)
 
 **Desafíos**
 - [x] D1 · TDD (commits red → green → refactor)
