@@ -193,7 +193,7 @@ Añadimos `debería coincidir con el snapshot de la tarjeta de Etiopía` (`src/c
 **Captura pendiente.** Pasos para hacerla:
 
 1. Poner un breakpoint en `src/catalog/cart.ts`, dentro de `addToCart`.
-2. En VS Code: *Terminal → Create JavaScript Debug Terminal* (o el desplegable `+` → *JavaScript Debug Terminal*).
+2. En VS Code, abrir una *JavaScript Debug Terminal*: `⇧⌘P` → *Debug: JavaScript Debug Terminal*, o en el panel de terminal, la flecha `⌄` junto al `+` → *JavaScript Debug Terminal*. (No está en el menú *Terminal* de la barra superior).
 3. Ejecutar `npm run test:run -- src/catalog/cart.spec.ts`. VS Code se engancha al proceso de Node y para en el breakpoint, con las variables (`cart`, `coffeeId`) en el panel de la izquierda.
 
 Ejecutar sólo una parte de los tests:
