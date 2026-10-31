@@ -308,7 +308,7 @@ Con el 💥 aparecía además el fallo de verdad: `expected [Function] to throw 
 
 ### Qué corregí y por qué
 
-Nada en el código, pero sí en lo que yo creía. Pensaba que sin `await` el test acababa antes de que se resolviera la promesa y quedaba en verde siempre, como el `try/catch` de O3. En versiones antiguas era así. Vitest 5 lo detecta y hace fallar el test, pero **también con el código correcto**: el rojo no te dice si el código está mal, sólo que el test está mal escrito. La regla sigue siendo la del enunciado: `rejects` siempre con `await`.
+Nada en el código, pero sí en lo que yo creía. Pensaba que sin `await` el test acababa antes de que se resolviera la promesa y quedaba en verde siempre, como el `try/catch` de O3. Vitest 5 lo detecta y hace fallar el test, pero **también con el código correcto**: el rojo no te dice si el código está mal, sólo que el test está mal escrito. La regla sigue siendo la del enunciado: `rejects` siempre con `await`.
 
 ---
 
