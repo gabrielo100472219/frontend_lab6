@@ -277,7 +277,7 @@ El proyecto completo, un commit por apartado: la configuración de Vitest, los t
 
 ### Qué corregí y por qué
 
-Lo que hubo que arreglar sobre la marcha, siempre al ejecutar algo y ver que no hacía lo esperado:
+Estas correcciones **no las hice yo**: las hizo la IA de forma autónoma durante la misma sesión, sin que yo le pidiera nada más. Al ejecutar los tests, el type-check o cada 💥, veía que algo no hacía lo esperado y lo arreglaba ella misma. Yo revisé después cada cambio y el porqué:
 
 - **El 💥 de `filter` no lo detectaba nadie.** Los tests del buscador sólo escribían en minúsculas, así que quitar `filter.toLowerCase()` dejaba todo en verde, aunque la cobertura de esa línea fuera del 100 %. Añadimos el test con "BRA".
 - **`npx vitest run` (sin `-c`) fallaba en los 8 ficheros.** Sin `-c`, Vitest usaba `vite.config.ts`, sin globals ni jsdom. Además, después de P5, el config del catálogo también recogía el spec de `tueste/`. Arreglo: `include: ['src/**/*.spec.{ts,tsx}']` y un `vitest.config.ts` que reexporta `config/test/config.ts`.
@@ -287,3 +287,39 @@ Lo que hubo que arreglar sobre la marcha, siempre al ejecutar algo y ver que no 
 - **Parecía que el modo vigilancia no funcionaba.** Desde el agente, `npm test` se ejecutaba una vez y terminaba. No era la config: Vitest desactiva la vigilancia cuando detecta que lo ejecuta un agente de IA (`AI_AGENT`) o cuando no hay TTY. Al ejecutarlo en una pseudo-terminal sin esa variable, se volvió a ejecutar solo al guardar.
 
 ¿Fallaban los tests de la IA al romper el código? Casi siempre sí, a la primera. Las excepciones fueron justo las que el enunciado plantea como trampa: el `filter` sin `toLowerCase`, el `try/catch` sin `expect.assertions` y el snapshot con el 💥 de O4.
+
+---
+
+### Prompt
+
+"Si quito el `await` delante de `expect(getCoffees()).rejects.toThrow(…)`, ¿el test sigue detectando el 💥 del 503?"
+
+### Qué me dio
+
+En lugar de responder de memoria, lo probó: quitó el `await` en el `it.each` de `coffee.api.spec.ts` y ejecutó los tests, primero con el código bien y después con el 💥 (`case 502:`). En los dos casos los 3 tests se pusieron en rojo con:
+
+```
+Error: Promise returned by `expect(actual).rejects.toThrow(expected)` was not awaited.
+This assertion is asynchronous and must be awaited; otherwise, it is not guaranteed
+to complete before the test finishes
+```
+
+Con el 💥 aparecía además el fallo de verdad: `expected [Function] to throw error including 'Servicio no disponible' but got 'Error inesperado'`.
+
+### Qué corregí y por qué
+
+Nada en el código, pero sí en lo que yo creía. Pensaba que sin `await` el test acababa antes de que se resolviera la promesa y quedaba en verde siempre, como el `try/catch` de O3. En versiones antiguas era así. Vitest 5 lo detecta y hace fallar el test, pero **también con el código correcto**: el rojo no te dice si el código está mal, sólo que el test está mal escrito. La regla sigue siendo la del enunciado: `rejects` siempre con `await`.
+
+---
+
+### Prompt
+
+"En los tests del contador (P3), ¿hace falta de verdad el `act` alrededor de `vi.advanceTimersByTime`? Los temporizadores son falsos, no es React."
+
+### Qué me dio
+
+También lo probó: quitó el `act` en `debería bajar uno por segundo` y ejecutó el fichero. El test se puso en rojo con `expected 5 to be 4`, y React avisó: `An update to TestComponent inside a test was not wrapped in act(...)`. La explicación: `advanceTimersByTime` sí ejecuta el callback del `setInterval`, y este llama a `setLeft`, pero esa actualización de estado queda pendiente. Sin `act`, React no vuelve a renderizar antes del `expect`, y `result.current.left` sigue en 5. `act` es lo que aplica la actualización y renderiza.
+
+### Qué corregí y por qué
+
+Nada: dejamos el `act` como estaba. Me quedé con la idea de que los temporizadores falsos controlan *cuándo* se ejecuta el callback, y `act` controla *cuándo React aplica* lo que ese callback cambió. Hacen falta los dos.
